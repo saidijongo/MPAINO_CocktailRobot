@@ -30,7 +30,7 @@ void runPumps(String commandStr) {
   // Remove leading and trailing parentheses
   commandStr = commandStr.substring(1, commandStr.length() - 1);
 
-  // Split commands by commas
+  // Process the entire command string
   int commaIndex = commandStr.indexOf(',');
   while (commaIndex != -1) {
     String command = commandStr.substring(0, commaIndex);
